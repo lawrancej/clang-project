@@ -1,4 +1,4 @@
-#include <iostream>
+// #include <iostream>
 #include <clang/AST/ASTContext.h>
 #include <clang/AST/ASTConsumer.h>
 #include <clang/AST/RecursiveASTVisitor.h>
@@ -7,7 +7,7 @@
 #include <clang/Tooling/Tooling.h>
 
 using namespace clang;
-//using namespace std;
+// using namespace std;
 
 class FindNamedClassVisitor
   : public RecursiveASTVisitor<FindNamedClassVisitor> {
@@ -16,7 +16,7 @@ public:
     : Context(Context) {}
 
   bool VisitCXXRecordDecl(CXXRecordDecl *Declaration) {
-    std::cout << Declaration->getQualifiedNameAsString() << std::endl;
+//    cout << Declaration->getQualifiedNameAsString() << endl;
     return true;
   }
 
