@@ -23,5 +23,5 @@ llvm_map_components_to_libraries(REQ_LLVM_LIBRARIES native)
 add_definitions( ${LLVM_DEFINITIONS} )
 
 add_executable(clang-project src/test.cpp)
-target_link_libraries(clang-project ${REQ_LLVM_LIBRARIES} clang clangTooling)
+target_link_libraries(clang-project c++abi ${REQ_LLVM_LIBRARIES} clang clangFrontend clangAST clangTooling)
 
