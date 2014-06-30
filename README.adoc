@@ -1,0 +1,24 @@
+= Clang project
+
+This is a (minimal) starting point for working with clang.
+
+== Getting started
+These setup instructions should work for all platforms.
+
+. Download and install Vagrant and VirtualBox.
+. Fork and clone this repository.
+. In Git Bash or Terminal:
++
+----
+# Inside Git Bash or Terminal
+cd clang-project
+vagrant up
+vagrant ssh
+# Now, we're in the VM
+cd /vagrant     # Go into the shared folder
+mkdir build     # Make the build folder
+cd build        # Go into the build folder
+cmake ..        # Generate the makefiles
+make            # Build everything
+./clang-project # Try out the code. The source is in src/test.c
+----

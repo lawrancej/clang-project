@@ -12,6 +12,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "archlinux-x86_64"
   config.vm.box_url = "http://cloud.terry.im/vagrant/archlinux-x86_64.box"
+  config.vm.provision :shell, path: "provision.sh"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
