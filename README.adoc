@@ -5,7 +5,7 @@ This is a (minimal) starting point for working with clang.
 == Getting started
 These setup instructions should work for all platforms.
 
-. Download and install Vagrant and VirtualBox.
+. Download and install http://www.vagrantup.com/downloads.html[Vagrant] and https://www.virtualbox.org/wiki/Downloads[VirtualBox].
 . Fork and clone this repository.
 . In Git Bash or Terminal:
 +
